@@ -1,0 +1,456 @@
+HTML Color Names
+Color Names Supported by All Browsers
+All modern browsers support the following 140 color names (click on a color name, or a hex value, to view the color as the background-color along with different text colors):
+
+For a full overview of HTML colors, visit our colors tutorial.
+
+AliceBlue
+#F0F8FF
+AntiqueWhite
+#FAEBD7
+Aqua
+#00FFFF
+Aquamarine
+#7FFFD4
+Azure
+#F0FFFF
+Beige
+#F5F5DC
+Bisque
+#FFE4C4
+Black
+#000000
+BlanchedAlmond
+#FFEBCD
+Blue
+#0000FF
+BlueViolet
+#8A2BE2
+Brown
+#A52A2A
+BurlyWood
+#DEB887
+CadetBlue
+#5F9EA0
+Chartreuse
+#7FFF00
+Chocolate
+#D2691E
+Coral
+#FF7F50
+CornflowerBlue
+#6495ED
+Cornsilk
+#FFF8DC
+Crimson
+#DC143C
+Cyan
+#00FFFF
+DarkBlue
+#00008B
+DarkCyan
+#008B8B
+DarkGoldenRod
+#B8860B
+DarkGray
+#A9A9A9
+DarkGrey
+#A9A9A9
+DarkGreen
+#006400
+DarkKhaki
+#BDB76B
+DarkMagenta
+#8B008B
+DarkOliveGreen
+#556B2F
+DarkOrange
+#FF8C00
+DarkOrchid
+#9932CC
+DarkRed
+#8B0000
+DarkSalmon
+#E9967A
+DarkSeaGreen
+#8FBC8F
+DarkSlateBlue
+#483D8B
+DarkSlateGray
+#2F4F4F
+DarkSlateGrey
+#2F4F4F
+DarkTurquoise
+#00CED1
+DarkViolet
+#9400D3
+DeepPink
+#FF1493
+DeepSkyBlue
+#00BFFF
+DimGray
+#696969
+DimGrey
+#696969
+DodgerBlue
+#1E90FF
+FireBrick
+#B22222
+FloralWhite
+#FFFAF0
+ForestGreen
+#228B22
+Fuchsia
+#FF00FF
+Gainsboro
+#DCDCDC
+GhostWhite
+#F8F8FF
+Gold
+#FFD700
+GoldenRod
+#DAA520
+Gray
+#808080
+Grey
+#808080
+Green
+#008000
+GreenYellow
+#ADFF2F
+HoneyDew
+#F0FFF0
+HotPink
+#FF69B4
+IndianRed
+#CD5C5C
+Indigo
+#4B0082
+Ivory
+#FFFFF0
+Khaki
+#F0E68C
+Lavender
+#E6E6FA
+LavenderBlush
+#FFF0F5
+LawnGreen
+#7CFC00
+LemonChiffon
+#FFFACD
+LightBlue
+#ADD8E6
+LightCoral
+#F08080
+LightCyan
+#E0FFFF
+LightGoldenRodYellow
+#FAFAD2
+LightGray
+#D3D3D3
+LightGrey
+#D3D3D3
+LightGreen
+#90EE90
+LightPink
+#FFB6C1
+LightSalmon
+#FFA07A
+LightSeaGreen
+#20B2AA
+LightSkyBlue
+#87CEFA
+LightSlateGray
+#778899
+LightSlateGrey
+#778899
+LightSteelBlue
+#B0C4DE
+LightYellow
+#FFFFE0
+Lime
+#00FF00
+LimeGreen
+#32CD32
+Linen
+#FAF0E6
+Magenta
+#FF00FF
+Maroon
+#800000
+MediumAquaMarine
+#66CDAA
+MediumBlue
+#0000CD
+MediumOrchid
+#BA55D3
+MediumPurple
+#9370DB
+MediumSeaGreen
+#3CB371
+MediumSlateBlue
+#7B68EE
+MediumSpringGreen
+#00FA9A
+MediumTurquoise
+#48D1CC
+MediumVioletRed
+#C71585
+MidnightBlue
+#191970
+MintCream
+#F5FFFA
+MistyRose
+#FFE4E1
+Moccasin
+#FFE4B5
+NavajoWhite
+#FFDEAD
+Navy
+#000080
+OldLace
+#FDF5E6
+Olive
+#808000
+OliveDrab
+#6B8E23
+Orange
+#FFA500
+OrangeRed
+#FF4500
+Orchid
+#DA70D6
+PaleGoldenRod
+#EEE8AA
+PaleGreen
+#98FB98
+PaleTurquoise
+#AFEEEE
+PaleVioletRed
+#DB7093
+PapayaWhip
+#FFEFD5
+PeachPuff
+#FFDAB9
+Peru
+#CD853F
+Pink
+#FFC0CB
+Plum
+#DDA0DD
+PowderBlue
+#B0E0E6HTML 
+Canvas Reference
+
+HTML Canvas Reference
+The HTML <canvas> tag is used to draw graphics, on the fly, via scripting (usually JavaScript).
+
+To learn more about <canvas>, please read our HTML Canvas tutorial.
+
+Colors, Styles, and Shadows
+Property	Description
+fillStyle	Sets or returns the color, gradient, or pattern used to fill the drawing
+strokeStyle	Sets or returns the color, gradient, or pattern used for strokes
+shadowColor	Sets or returns the color to use for shadows
+shadowBlur	Sets or returns the blur level for shadows
+shadowOffsetX	Sets or returns the horizontal distance of the shadow from the shape
+shadowOffsetY	Sets or returns the vertical distance of the shadow from the shape
+Method	Description
+createLinearGradient()	Creates a linear gradient (to use on canvas content)
+createPattern()	Repeats a specified element in the specified direction
+createRadialGradient()	Creates a radial/circular gradient (to use on canvas content)
+addColorStop()	Specifies the colors and stop positions in a gradient object
+Line Styles
+Property	Description
+lineCap	Sets or returns the style of the end caps for a line
+lineJoin	Sets or returns the type of corner created, when two lines meet
+lineWidth	Sets or returns the current line width
+miterLimit	Sets or returns the maximum miter length
+Rectangles
+Method	Description
+rect()	Creates a rectangle
+fillRect()	Draws a "filled" rectangle
+strokeRect()	Draws a rectangle (no fill)
+clearRect()	Clears the specified pixels within a given rectangle
+Paths
+Method	Description
+fill()	Fills the current drawing (path)
+stroke()	Actually draws the path you have defined
+beginPath()	Begins a path, or resets the current path
+moveTo()	Moves the path to the specified point in the canvas, without creating a line
+closePath()	Creates a path from the current point back to the starting point
+lineTo()	Adds a new point and creates a line to that point from the last specified point in the canvas
+clip()	Clips a region of any shape and size from the original canvas
+quadraticCurveTo()	Creates a quadratic Bézier curve
+bezierCurveTo()	Creates a cubic Bézier curve
+arc()	Creates an arc/curve (used to create circles, or parts of circles)
+arcTo()	Creates an arc/curve between two tangents
+isPointInPath()	Returns true if the specified point is in the current path, otherwise false
+Transformations
+Method	Description
+scale()	Scales the current drawing bigger or smaller
+rotate()	Rotates the current drawing
+translate()	Remaps the (0,0) position on the canvas
+transform()	Replaces the current transformation matrix for the drawing
+setTransform()	Resets the current transform to the identity matrix. Then runs transform()
+Text
+Property	Description
+font	Sets or returns the current font properties for text content
+textAlign	Sets or returns the current alignment for text content
+textBaseline	Sets or returns the current text baseline used when drawing text
+Method	Description
+fillText()	Draws "filled" text on the canvas
+strokeText()	Draws text on the canvas (no fill)
+measureText()	Returns an object that contains the width of the specified text
+Image Drawing
+Method	Description
+drawImage()	Draws an image, canvas, or video onto the canvas
+Pixel Manipulation
+Property	Description
+width	Returns the width of an ImageData object
+height	Returns the height of an ImageData object
+data	Returns an object that contains image data of a specified ImageData object
+Method	Description
+createImageData()	Creates a new, blank ImageData object
+getImageData()	Returns an ImageData object that copies the pixel data for the specified rectangle on a canvas
+putImageData()	Puts the image data (from a specified ImageData object) back onto the canvas
+Compositing
+Property	Description
+globalAlpha	Sets or returns the current alpha or transparency value of the drawing
+globalCompositeOperation	Sets or returns how a new image is drawn onto an existing image
+Other
+Method	Description
+save()	Saves the state of the current context
+restore()	Returns previously saved path state and attributes
+createEvent()	 
+getContext()	 
+toDataURL()	 
+Purple
+#800080
+RebeccaPurple
+#663399
+Red
+#FF0000
+RosyBrown
+#BC8F8F
+RoyalBlue
+#4169E1
+SaddleBrown
+#8B4513
+Salmon
+#FA8072
+SandyBrown
+#F4A460
+SeaGreen
+#2E8B57
+SeaShell
+#FFF5EE
+Sienna
+#A0522D
+Silver
+#C0C0C0
+SkyBlue
+#87CEEB
+SlateBlue
+#6A5ACD
+SlateGray
+#708090
+SlateGrey
+#708090
+Snow
+#FFFAFA
+SpringGreen
+#00FF7F
+SteelBlue
+#4682B4
+Tan
+#D2B48C
+Teal
+#008080
+Thistle
+#D8BFD8
+Tomato
+#FF6347
+Turquoise
+#40E0D0
+Violet
+#EE82EE
+Wheat
+#F5DEB3
+White
+#FFFFFF
+WhiteSmoke
+#F5F5F5
+Yellow
+#FFFF00
+YellowGreen
+#9ACD32
+
+
+HTML Audio/Video DOM Reference
+HTML Audio and Video DOM Reference
+The HTML5 DOM has methods, properties, and events for the <audio> and <video> elements.
+
+HTML Audio/Video Methods
+Method	Description
+addTextTrack()	Adds a new text track to the audio/video
+canPlayType()	Checks if the browser can play the specified audio/video type
+load()	Re-loads the audio/video element
+play()	Starts playing the audio/video
+pause()	Pauses the currently playing audio/video
+HTML Audio/Video Properties
+Property	Description
+audioTracks	Returns an AudioTrackList object representing available audio tracks
+autoplay	Sets or returns whether the audio/video should start playing as soon as it is loaded
+buffered	Returns a TimeRanges object representing the buffered parts of the audio/video
+controller	Returns the MediaController object representing the current media controller of the audio/video
+controls	Sets or returns whether the audio/video should display controls (like play/pause etc.)
+crossOrigin	Sets or returns the CORS settings of the audio/video
+currentSrc	Returns the URL of the current audio/video
+currentTime	Sets or returns the current playback position in the audio/video (in seconds)
+defaultMuted	Sets or returns whether the audio/video should be muted by default
+defaultPlaybackRate	Sets or returns the default speed of the audio/video playback
+duration	Returns the length of the current audio/video (in seconds)
+ended	Returns whether the playback of the audio/video has ended or not
+error	Returns a MediaError object representing the error state of the audio/video
+loop	Sets or returns whether the audio/video should start over again when finished
+mediaGroup	Sets or returns the group the audio/video belongs to (used to link multiple audio/video elements)
+muted	Sets or returns whether the audio/video is muted or not
+networkState	Returns the current network state of the audio/video
+paused	Returns whether the audio/video is paused or not
+playbackRate	Sets or returns the speed of the audio/video playback
+played	Returns a TimeRanges object representing the played parts of the audio/video
+preload	Sets or returns whether the audio/video should be loaded when the page loads
+readyState	Returns the current ready state of the audio/video
+seekable	Returns a TimeRanges object representing the seekable parts of the audio/video
+seeking	Returns whether the user is currently seeking in the audio/video
+src	Sets or returns the current source of the audio/video element
+startDate	Returns a Date object representing the current time offset
+textTracks	Returns a TextTrackList object representing the available text tracks
+videoTracks	Returns a VideoTrackList object representing the available video tracks
+volume	Sets or returns the volume of the audio/video
+HTML Audio/Video Events
+Event	Description
+abort	Fires when the loading of an audio/video is aborted
+canplay	Fires when the browser can start playing the audio/video
+canplaythrough	Fires when the browser can play through the audio/video without stopping for buffering
+durationchange	Fires when the duration of the audio/video is changed
+emptied	Fires when the current playlist is empty
+ended	Fires when the current playlist is ended
+error	Fires when an error occurred during the loading of an audio/video
+loadeddata	Fires when the browser has loaded the current frame of the audio/video
+loadedmetadata	Fires when the browser has loaded meta data for the audio/video
+loadstart	Fires when the browser starts looking for the audio/video
+pause	Fires when the audio/video has been paused
+play	Fires when the audio/video has been started or is no longer paused
+playing	Fires when the audio/video is playing after having been paused or stopped for buffering
+progress	Fires when the browser is downloading the audio/video
+ratechange	Fires when the playing speed of the audio/video is changed
+seeked	Fires when the user is finished moving/skipping to a new position in the audio/video
+seeking	Fires when the user starts moving/skipping to a new position in the audio/video
+stalled	Fires when the browser is trying to get media data, but data is not available
+suspend	Fires when the browser is intentionally not getting media data
+timeupdate	Fires when the current playback position has changed
+volumechange	Fires when the volume has been changed
+waiting	Fires when the video stops because it needs to buffer the next frame
+

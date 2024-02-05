@@ -1,0 +1,261 @@
+JavaScript Array Reference
+The JavaScript Array Object
+The Array object is used to store multiple values in a single variable:
+
+const cars = ["Saab", "Volvo", "BMW"];
+Array indexes are zero-based: The first element in the array is 0, the second is 1, and so on.
+
+See Also:
+The JavaScript Array Tutorial.
+
+JavaScript Array Methods and Properties
+Name	Description
+concat()	Joins arrays and returns an array with the joined arrays
+constructor	Returns the function that created the Array object's prototype
+copyWithin()	Copies array elements within the array, to and from specified positions
+entries()	Returns a key/value pair Array Iteration Object
+every()	Checks if every element in an array pass a test
+fill()	Fill the elements in an array with a static value
+filter()	Creates a new array with every element in an array that pass a test
+find()	Returns the value of the first element in an array that pass a test
+findIndex()	Returns the index of the first element in an array that pass a test
+forEach()	Calls a function for each array element
+from()	Creates an array from an object
+includes()	Check if an array contains the specified element
+indexOf()	Search the array for an element and returns its position
+isArray()	Checks whether an object is an array
+join()	Joins all elements of an array into a string
+keys()	Returns a Array Iteration Object, containing the keys of the original array
+lastIndexOf()	Search the array for an element, starting at the end, and returns its position
+length	Sets or returns the number of elements in an array
+map()	Creates a new array with the result of calling a function for each array element
+pop()	Removes the last element of an array, and returns that element
+prototype	Allows you to add properties and methods to an Array object
+push()	Adds new elements to the end of an array, and returns the new length
+reduce()	Reduce the values of an array to a single value (going left-to-right)
+reduceRight()	Reduce the values of an array to a single value (going right-to-left)
+reverse()	Reverses the order of the elements in an array
+shift()	Removes the first element of an array, and returns that element
+slice()	Selects a part of an array, and returns the new array
+some()	Checks if any of the elements in an array pass a test
+sort()	Sorts the elements of an array
+splice()	Adds/Removes elements from an array
+toString()	Converts an array to a string, and returns the result
+unshift()	Adds new elements to the beginning of an array, and returns the new length
+valueOf()	Returns the primitive value of an array
+
+JavaScript Boolean Methods and Properties
+Name	Description
+constructor	Returns the function that created JavaScript's Boolean prototype
+prototype	Allows you to add properties and methods to the Boolean prototype
+toString()	Converts a boolean value to a string, and returns the result
+valueOf()	Returns the primitive value of a boolean
+
+
+Class Methods
+Method	Description
+constructor()	A special method for creating and initializing objects created within a class
+Class Keywords
+Keyword	Description
+extends	Extends a class (inherit)
+static	Defines a static method for a class
+super	Refers to the parent class
+
+JavaScript Date Methods and Properties
+Name	Description
+constructor	Returns the function that created the Date object's prototype
+getDate()	Returns the day of the month (from 1-31)
+getDay()	Returns the day of the week (from 0-6)
+getFullYear()	Returns the year
+getHours()	Returns the hour (from 0-23)
+getMilliseconds()	Returns the milliseconds (from 0-999)
+getMinutes()	Returns the minutes (from 0-59)
+getMonth()	Returns the month (from 0-11)
+getSeconds()	Returns the seconds (from 0-59)
+getTime()	Returns the number of milliseconds since midnight Jan 1 1970, and a specified date
+getTimezoneOffset()	Returns the time difference between UTC time and local time, in minutes
+getUTCDate()	Returns the day of the month, according to universal time (from 1-31)
+getUTCDay()	Returns the day of the week, according to universal time (from 0-6)
+getUTCFullYear()	Returns the year, according to universal time
+getUTCHours()	Returns the hour, according to universal time (from 0-23)
+getUTCMilliseconds()	Returns the milliseconds, according to universal time (from 0-999)
+getUTCMinutes()	Returns the minutes, according to universal time (from 0-59)
+getUTCMonth()	Returns the month, according to universal time (from 0-11)
+getUTCSeconds()	Returns the seconds, according to universal time (from 0-59)
+getYear()	Deprecated. Use the getFullYear() method instead
+now()	Returns the number of milliseconds since midnight Jan 1, 1970
+parse()	Parses a date string and returns the number of milliseconds since January 1, 1970
+prototype	Allows you to add properties and methods to an object
+setDate()	Sets the day of the month of a date object
+setFullYear()	Sets the year of a date object
+setHours()	Sets the hour of a date object
+setMilliseconds()	Sets the milliseconds of a date object
+setMinutes()	Set the minutes of a date object
+setMonth()	Sets the month of a date object
+setSeconds()	Sets the seconds of a date object
+setTime()	Sets a date to a specified number of milliseconds after/before January 1, 1970
+setUTCDate()	Sets the day of the month of a date object, according to universal time
+setUTCFullYear()	Sets the year of a date object, according to universal time
+setUTCHours()	Sets the hour of a date object, according to universal time
+setUTCMilliseconds()	Sets the milliseconds of a date object, according to universal time
+setUTCMinutes()	Set the minutes of a date object, according to universal time
+setUTCMonth()	Sets the month of a date object, according to universal time
+setUTCSeconds()	Set the seconds of a date object, according to universal time
+setYear()	Deprecated. Use the setFullYear() method instead
+toDateString()	Converts the date portion of a Date object into a readable string
+toGMTString()	Deprecated. Use the toUTCString() method instead
+toISOString()	Returns the date as a string, using the ISO standard
+toJSON()	Returns the date as a string, formatted as a JSON date
+toLocaleDateString()	Returns the date portion of a Date object as a string, using locale conventions
+toLocaleTimeString()	Returns the time portion of a Date object as a string, using locale conventions
+toLocaleString()	Converts a Date object to a string, using locale conventions
+toString()	Converts a Date object to a string
+toTimeString()	Converts the time portion of a Date object to a string
+toUTCString()	Converts a Date object to a string, according to universal time
+UTC()	Returns the number of milliseconds in a date since midnight of January 1, 1970, according to UTC time
+valueOf()	Returns the primitive value of a Date object
+
+
+Error Object Properties
+Property	Description
+name	Sets or returns an error name
+message	Sets or returns an error message (a string)
+Error Names
+Error Name	Description	Try it
+EvalError	Deprecated - use SyntaxError instead	 
+RangeError	A number "out of range" has occurred	
+ReferenceError	An illegal reference has occurred	
+SyntaxError	A syntax error has occurred	
+TypeError	A type error has occurred	
+URIError	An error in encodeURI() has occurred	
+Non-Standard Properties and Methods
+Do not use these properties and methods in public web sites. They will not work in all browsers.
+
+Property	Description
+arguments	Deprecated
+caller	Deprecated
+columnNumber	Firefox only
+description	Microsoft only
+displayName	Firefox only
+fileName	Firefox only
+lineNumber	Firefox only
+number	Microsoft only
+stack	Firefox only
+Methods	Description
+evalError()	Deprecated
+internalError()	Firefox only
+toSource()	Non Standard
+
+JavaScript Global Methods and Properties
+Name	Description
+decodeURI()	Decodes a URI
+decodeURI
+Component()	Decodes a URI component
+encodeURI()	Encodes a URI
+encodeURI
+Component()	Encodes a URI component
+escape()	Deprecated. Use instead:
+encodeURI()
+encodeURIComponent()
+eval()	Evaluates a string and executes it as if it was script code
+Infinity	A numeric value that represents positive/negative infinity
+isFinite()	Determines whether a value is a finite, legal number
+isNaN()	Determines whether a value is an illegal number
+NaN	"Not-a-Number" value
+Number()	Converts an object's value to a number
+parseFloat()	Parses a string and returns a floating point number
+parseInt()	Parses a string and returns an integer
+String()	Converts an object's value to a string
+undefined	Indicates that a variable has not been assigned a value
+unescape()	Deprecated. Use instead:
+decodeURI()
+decodeURIComponent()
+JSON Methods
+Method	Description
+parse()	Parses a JSON string and returns a JavaScript object
+stringify()	Convert a JavaScript object to a JSON string
+
+
+Math Object
+The Math object allows you to perform mathematical tasks.
+
+Math is not a constructor. All properties/methods of Math can be called by using Math as an object, without creating it:
+
+Example
+let x = Math.PI;
+let y = Math.sqrt(16);
+Math Tutorial
+JavaScript Math Tutorial.
+
+Math Object Methods and Properties
+Name	Description
+abs(x)	Returns the absolute value of x
+acos(x)	Returns the arccosine of x, in radians
+acosh(x)	Returns the hyperbolic arccosine of x
+asin(x)	Returns the arcsine of x, in radians
+asinh(x)	Returns the hyperbolic arcsine of x
+atan(x)	Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians
+atan2(y, x)	Returns the arctangent of the quotient of its arguments
+atanh(x)	Returns the hyperbolic arctangent of x
+cbrt(x)	Returns the cubic root of x
+ceil(x)	Returns x, rounded upwards to the nearest integer
+clz32(x)	Returns the number of leading zeros in a 32-bit binary representation of x
+cos(x)	Returns the cosine of x (x is in radians)
+cosh(x)	Returns the hyperbolic cosine of x
+E	Returns Euler's number (approx. 2.718)
+exp(x)	Returns the value of Ex
+expm1(x)	Returns the value of Ex minus 1
+floor(x)	Returns x, rounded downwards to the nearest integer
+fround(x)	Returns the nearest (32-bit single precision) float representation of a number
+LN2	Returns the natural logarithm of 2 (approx. 0.693)
+LN10	Returns the natural logarithm of 10 (approx. 2.302)
+log(x)	Returns the natural logarithmof x
+log10(x)	Returns the base-10 logarithm of x
+LOG10E	Returns the base-10 logarithm of E (approx. 0.434)
+log1p(x)	Returns the natural logarithm of 1 + x
+log2(x)	Returns the base-2 logarithm of x
+LOG2E	Returns the base-2 logarithm of E (approx. 1.442)
+max(x1,x2,..)	Returns the number with the highest value
+min(x1,x2,..)	Returns the number with the lowest value
+PI	Returns PI (approx. 3.14)
+pow(x, y)	Returns the value of x to the power of y
+random()	Returns a random number between 0 and 1
+round(x)	Rounds x to the nearest integer
+sign(x)	Returns the sign of a number (checks whether it is positive, negative or zero)
+sin(x)	Returns the sine of x (x is in radians)
+sinh(x)	Returns the hyperbolic sine of x
+sqrt(x)	Returns the square root of x
+SQRT1_2	Returns the square root of 1/2 (approx. 0.707)
+SQRT2	Returns the square root of 2 (approx. 1.414)
+tan(x)	Returns the tangent of an angle
+tanh(x)	Returns the hyperbolic tangent of a number
+trunc(x)	Returns the integer part of a number (x)
+
+JavaScript Number Methods and Properties
+Name	Description
+constructor	Returns the function that created JavaScript's Number prototype
+isFinite()	Checks whether a value is a finite number
+isInteger()	Checks whether a value is an integer
+isNaN()	Checks whether a value is Number.NaN
+isSafeInteger()	Checks whether a value is a safe integer
+MAX_VALUE	Returns the largest number possible in JavaScript
+MIN_VALUE	Returns the smallest number possible in JavaScript
+NEGATIVE_INFINITY	Represents negative infinity (returned on overflow)
+NaN	Represents a "Not-a-Number" value
+POSITIVE_INFINITY	Represents infinity (returned on overflow)
+prototype	Allows you to add properties and methods to an object
+toExponential(x)	Converts a number into an exponential notation
+toFixed(x)	Formats a number with x numbers of digits after the decimal point
+toLocaleString()	Converts a number into a string, based on the locale settings
+toPrecision(x)	Formats a number to x length
+toString()	Converts a number to a string
+valueOf()	return primitive value of num
+
+
+JavaScript Object Methods and Properties
+Name	Description
+constructor	Returns the function that created an object's prototype
+keys()	Returns an Array Iterator object with the keys of an object
+prototype	Let you to add properties and methods to JavaScript objects
+toString()	Converts an object to a string and returns the result
+valueOf()	Returns the primitive value of an object

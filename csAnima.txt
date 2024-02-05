@@ -1,0 +1,183 @@
+CSS Animatable
+Definition and Usage
+Some CSS properties are animatable, meaning that they can be used in animations and transitions.
+
+Animatable properties can change gradually from one value to another, like size, numbers, percentage and color.
+
+Browser Support
+The numbers in the table specifies the first browser version that fully support CSS animations.
+
+Numbers followed by -webkit-, -moz-, or -o- specify the first version that worked with a prefix.
+
+43.0
+4.0 -webkit-	10.0	16.0
+5.0 -moz-	9.0
+4.0 -webkit-	30.0
+15.0 -webkit-
+12.0 -o-
+
+Example
+Animate the background-color from red to blue:
+
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+Animatable Properties
+These properties are animatable in CSS:
+
+Property
+background
+background-color
+background-position
+background-size
+border
+border-bottom
+border-bottom-color
+border-bottom-left-radius
+border-bottom-right-radius
+border-bottom-width
+border-color
+border-left
+border-left-color
+border-left-width
+border-right
+border-right-color
+border-right-width
+border-spacing
+border-top
+border-top-color
+border-top-left-radius
+border-top-right-radius
+border-top-width
+bottom
+box-shadow
+clip
+color
+column-count
+column-gap
+column-rule
+column-rule-color
+column-rule-width
+column-width
+columns
+filter
+flex
+flex-basis
+flex-grow
+flex-shrink
+font
+font-size
+font-size-adjust
+font-stretch
+font-weight
+grid
+grid-area
+grid-auto-columns
+grid-auto-flow
+grid-auto-rows
+grid-column
+grid-column-end
+grid-column-gap
+grid-column-start
+grid-gap
+grid-row
+grid-row-end
+grid-row-gap
+grid-row-start
+grid-template
+grid-template-areas
+grid-template-columns
+grid-template-rows
+height
+left
+letter-spacing
+line-height
+margin
+margin-bottom
+margin-left
+margin-right
+margin-top
+max-height
+max-width
+min-height
+min-width
+object-position
+opacity
+order
+outline
+outline-color
+outline-offset
+outline-width
+padding
+padding-bottom
+padding-left
+padding-right
+padding-top
+perspective
+perspective-origin
+right
+text-decoration-color
+text-indent
+text-shadow
+top
+transform
+transform-origin
+vertical-align
+visibility
+width
+word-spacing
+z-index
+CSS Units
+CSS Units
+CSS has several different units for expressing a length.
+
+Many CSS properties take "length" values, such as width, margin, padding, font-size, etc.
+
+Length is a number followed by a length unit, such as 10px, 2em, etc.
+
+Example
+Set different length values, using px (pixels):
+
+h1 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 25px;
+  line-height: 50px;
+}
+
+Note: A whitespace cannot appear between the number and the unit. However, if the value is 0, the unit can be omitted.
+
+For some CSS properties, negative lengths are allowed.
+
+There are two types of length units: absolute and relative.
+
+Absolute Lengths
+The absolute length units are fixed and a length expressed in any of these will appear as exactly that size.
+
+Absolute length units are not recommended for use on screen, because screen sizes vary so much. However, they can be used if the output medium is known, such as for print layout.
+
+Unit	Description
+cm	centimeters
+mm	millimeters
+in	inches (1in = 96px = 2.54cm)
+px *	pixels (1px = 1/96th of 1in)
+pt	points (1pt = 1/72 of 1in)
+pc	picas (1pc = 12 pt)
+* Pixels (px) are relative to the viewing device. For low-dpi devices, 1px is one device pixel (dot) of the display. For printers and high resolution screens 1px implies multiple device pixels.
+
+Relative Lengths
+Relative length units specify a length relative to another length property. Relative length units scale better between different rendering medium.
+
+Unit	Description	
+em	Relative to the font-size of the element (2em means 2 times the size of the current font)	
+ex	Relative to the x-height of the current font (rarely used)	
+ch	Relative to the width of the "0" (zero)	
+rem	Relative to font-size of the root element	
+vw	Relative to 1% of the width of the viewport*	
+vh	Relative to 1% of the height of the viewport*	
+vmin	Relative to 1% of viewport's* smaller dimension	
+vmax	Relative to 1% of viewport's* larger dimension	
+%	Relative to the parent element

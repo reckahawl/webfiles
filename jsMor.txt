@@ -1,0 +1,399 @@
+JavaScript Arithmetic Operators
+Arithmetic operators are used to perform arithmetic between variables and/or values.
+
+Given that y = 5, the table below explains the arithmetic operators:
+
+Oper	Name	Example	Results	Try it
++	Addition	x = y + 2	y=5, x=7	
+-	Subtraction	x=y-2	y=5, x=3	
+*	Multiplication	x=y*2	y=5, x=10	
+**	Exponentiation
+ES2016	x=y**2	y=5, x=25	
+/	Division	x = y / 2	y=5, x=2.5	
+%	Modulus
+(remainder)	x = y % 2	y=5, x=1	
+++	Pre increment	x = ++y	y=6, x=6	
+++	Post increment	x = y++	y=6, x=5	
+--	Pre decrement	x = --y	y=4, x=4	
+--	Post decrement	x = y--	y=4, x=5	
+For a tutorial about arithmetic operators, read our JavaScript Arithmetic Tutorial.
+
+JavaScript Assignment Operators
+Assignment operators are used to assign values to JavaScript variables.
+
+Given that x = 10 and y = 5, the table below explains the assignment operators:
+
+Oper	Example	Same As	Result	Try it
+=	x = y	x = y	x = 5	
++=	x += y	x = x + y	x = 15	
+-=	x -= y	x = x - y	x = 5	
+*=	x *= y	x = x * y	x = 50	
+/=	x /= y	x = x / y	x = 2	
+%=	x %= y	x = x % y	x = 0	
+:	x: 45	size.x = 45	x = 45	
+For a tutorial about assignment operators, read our JavaScript Assignment Tutorial.
+
+JavaScript String Operators
+The + operator, and the += operator can also be used to concatenate (add) strings.
+
+Given that t1 = "Good ", t2 = "Morning", and t3 = "", the table below explains the operators:
+
+Oper	Example	t1	t2	t3	Try it
++	t3 = t1 + t2	"Good "	"Morning"	 "Good Morning"	
++=	t1 += t2	"Good Morning"	"Morning"		
+Comparison Operators
+Comparison operators are used in logical statements to determine equality or difference between variables or values.
+
+Given that x = 5, the table below explains the comparison operators:
+
+Oper	Name	Comparing	Returns	Try it
+==	equal to	x == 8	false	
+==	equal to	x == 5	true	
+===	equal value and type	x === "5"	false	
+===	equal value and type	x === 5	true	
+!=	not equal	x != 8	true	
+!==	not equal value or type	x !== "5"	true	
+!==	not equal value or type	x !== 5	false	
+>	greater than	x > 8	false	
+<	less than	x < 8	true	
+>=	greater or equal to	x >= 8	false	
+<=	less or equal to	x <= 8	true	
+For a tutorial about comparison operators, read our JavaScript Comparisons Tutorial.
+
+Conditional (Ternary) Operator
+The conditional operator assigns a value to a variable based on a condition.
+
+Syntax	Example	Try it
+(condition) ? x : y	(z < 18) ? x : y	
+Logical Operators
+Logical operators are used to determine the logic between variables or values.
+
+Given that x = 6 and y = 3, the table below explains the logical operators:
+
+Oper	Name	Example	Try it
+&&	AND	(x < 10 && y > 1) is true	
+||	OR	(x === 5 || y === 5) is false	
+!	NOT	!(x === y) is true	
+JavaScript Bitwise Operators
+Bit operators work on 32 bits numbers. Any numeric operand in the operation is converted into a 32 bit number. The result is converted back to a JavaScript number.
+
+Oper	Name	Example	Same as	Result	Decimal	Try it
+&	AND	x = 5 & 1	0101 & 0001	0001	1	
+|	OR	x = 5 | 1	0101 | 0001	0101	5	
+~	NOT	x = ~ 5	~0101	1010	10	
+^	XOR	x = 5 ^ 1	0101 ^ 0001	0100	4	
+<<	Left shift	x = 5 << 1	0101 << 1	1010	10	
+>>	Right shift	x = 5 >> 1	0101 >> 1	0010	2	
+>>>	Unsigned right	x = 5 >>> 1	0101 >>> 1	0010	2	
+Note
+The table above uses 4 bits unsigned number. Since JavaScript uses 32-bit signed numbers, ~ 5 will not return 10. It will return -6.
+
+~00000000000000000000000000000101 (~5)
+will return
+11111111111111111111111111111010 (-6)
+
+The typeof Operator
+The typeof operator returns the type of a variable, object, function or expression:
+
+Example
+typeof "John"   // Returns string
+typeof 3.14     // Returns number
+Please observe:
+
+The data type of NaN is number
+The data type of an array is object
+The data type of a date is object
+The data type of null is object
+The data type of an undefined variable is undefined
+Example
+typeof "John"
+typeof 3.14
+typeof NaN
+typeof false
+typeof [1, 2, 3, 4]
+typeof {name:'John', age:34}
+typeof new Date()
+typeof function () {}
+typeof myCar
+typeof null
+Note
+You cannot use typeof to define if a JavaScript object is an array or a date.
+
+Both array and date return object as type.
+
+The delete Operator
+The delete operator deletes a property from an object:
+
+Example
+const person = {
+  firstName:"John",
+  lastName:"Doe",
+  age:50,
+  eyeColor:"blue"
+};
+delete person.age;
+The delete operator deletes both the value of the property and the property itself.
+
+After deletion, the property cannot be used before it is added back again.
+
+The delete operator is designed to be used on object properties. It has no effect on variables or functions.
+
+Note
+The delete operator should not be used on the properties of any predefined JavaScript objects (Array, Boolean, Date, Function, Math, Number, RegExp, and String).
+
+This can crash your application.
+
+The Spread (...) Operator
+The ... operator expands an iterable into more elements (or more arguments for function calls):
+
+Example
+const cars1 = ["Saab", "Volvo", ..."BMW"];
+const cars2 = ["Fiat", "Toyota"];
+
+const combined = [cars1, ...cars2];
+The ... operator can be used to expand an iterable into more arguments for function calls:
+
+Example
+const numbers = [23,55,21,87,56];
+let maxValue = Math.max(...numbers);
+The in Operator
+The in operator returns true if a property is in an object, otherwise false:
+
+Obect Example
+const person = {firstName:"John", lastName:"Doe", age:50};
+("firstName" in person);
+("age" in person);
+Note
+You cannot use in to check for array content like ("Volvo" in cars).
+
+Array properties can only be index (0,1,2,3...) and length.
+
+See the examples below.
+
+Examples
+const cars = ["Saab", "Volvo", "BMW"];
+("Saab" in cars);
+const cars = ["Saab", "Volvo", "BMW"];
+(0 in cars);
+(1 in cars);
+(4 in cars);
+("length" in cars);
+Predefined Objects
+("PI" in Math);
+("NaN" in Number);
+("length" in String);
+The instanceof Operator
+The instanceof operator returns true if an object is an instance of a specified object:
+
+Example
+const cars = ["Saab", "Volvo", "BMW"];
+
+(cars instanceof Array)   // Returns true
+(cars instanceof Object)  // Returns true
+(cars instanceof String)  // Returns false
+(cars instanceof Number)  // Returns false
+The void Operator
+The void operator evaluates an expression and returns undefined. This operator is often used to obtain the undefined primitive value, using "void(0)" (useful when evaluating an expression without using the return value).
+
+Example
+<a href="javascript:void(0);">
+  Useless link
+</a>
+
+<a href="javascript:void(document.body.style.backgroundColor='red');">
+  Click me to change the background color of body to red
+</a>
+JavaScript Operator Precedence
+Operator precedence describes the order in which operations are performed in an arithmetic expression.
+
+Multiplication (*) and division (/) have higher precedence than addition (+) and subtraction (-).
+
+Examples
+As in traditional mathematics, multiplication is done first:
+
+let x = 100 + 50 * 3;
+As in traditional mathematics, the precedence can be changed by parentheses.
+
+When using parentheses, operations inside the parentheses are computed first:
+
+let x = (100 + 50) * 3;
+When operators have the same precedence (like + and -), they are computed from left to right:
+
+let x = 100 / 50 * 3;
+Operator Precedence Values
+Expressions in parentheses are computed before the rest of the expression
+Function are executed before the result is used in the rest of the expression
+Val	Operator	Description	Example
+18	( )	Expression Grouping	(100 + 50) * 3
+17	.	Member Of	car.name
+17	[]	Member Of	car["name"]
+17	?.	Optional Chaining ES2020	x ?. y
+17	()	Function Call	myFunction()
+17	new	New with Arguments	new Date("June 5,2022")
+16	new	New without Arguments	new Date()
+Increment Operators
+Posfix increments are executed before prefix increments
+15	++	Postfix Increment	i++
+15	--	Postfix Decrement	i--
+14	++	Prefix Increment	++i
+14	--	Prefix Decrement	--i
+NOT Operators
+14	!	Logical NOT	!(x==y)
+14	~	Bitwise NOT	~x
+Unary Operators
+14	+	Unary Plus	+x
+14	-	Unary Minus	-x
+14	typeof	Data Type	typeof x
+14	void	Evaluate Void	void(0)
+14	delete	Property Delete	delete myCar.color
+Arithmetic Operators
+Exponentiations are executed before multiplications
+Multiplications and divisions are executed before additions and subtractions
+13	**	Exponentiation ES2016	10 ** 2
+12	*	Multiplication	10 * 5
+12	/	Division	10 / 5
+12	%	Division Remainder	10 % 5
+11	+	Addition	10 + 5
+11	-	Subtraction	10 - 5
+11	+	Concatenation	"John" + "Doe"
+Shift Operators
+10	<<	Shift Left	x << 2
+10	>>	Shift Right (signed)	x >> 2
+10	>>>	Shift Right (unsigned)	x >>> 2
+Relational Operators
+9	in	Property in Object	"PI" in Math
+9	instanceof	Instance of Object	x instanceof Array
+Comparison Operators
+9	<	Less than	x < y 
+9	<=	Less than or equal	x <= y
+9	>	Greater than	x > y
+9	>=	Greater than or equal	x >= Array
+8	==	Equal	x == y
+8	===	Strict equal	x === y
+8	!=	Unequal	x != y
+8	!==	Strict unequal	x !== y
+Bitwise Operators
+7	&	Bitwise AND	x & y
+6	^	Bitwise XOR	x ^ y
+5	|	Bitwise OR	x | y
+Logical Operators
+4	&&	Logical AND	x && y
+3	||	Logical OR	x || y
+3	??	Nullish Coalescing ES2020	x ?? y
+Conditional (ternary) Operator
+2	? :	Condition	? "yes" : "no"
+Assignment Operators
+Assignments are executed after other operations
+2	=	Simple Assignment	x + y
+2	+=	Addition Assignment	x += y
+2	-=	Subtraction Assignment	x -= y
+2	*=	Multiplication Assignment	x *= y
+2	**=	Exponentiation Assignment	x **= y
+2	/=	Division Assignment	x /= y
+2	%=	Remainder Assignment	x %= y
+2	<<=	Left Shift Assignment	x <<= y
+2	>>=	Right Shift Assignment	x >>= y
+2	>>>=	Unsigned Right Shift	x >>>= y
+2	&=	Bitwise AND Assignment	x &= y
+2	|=	Bitwise OR Assignment	x |= y
+2	^=	Bitwise XOR Assignment	x ^= y
+2	&&=	Logical AND Assignment	x &= y
+2	||=	Logical OR Assignment	x ||= y
+2	:	Colon Assignment	x : 5
+2	=>	Arrow	x => y
+2	yield	Pause / Resume	yield x
+2	yield*	Delegate	yield* x
+2	...	Spread	...x
+ 	 	 	 
+1	,	Comma	x , y
+
+JavaScript RegExp Reference
+RegExp Object
+A regular expression is a pattern of characters.
+
+The pattern is used to do pattern-matching "search-and-replace" functions on text.
+
+In JavaScript, a RegExp Object is a pattern with Properties and Methods.
+
+Syntax
+/pattern/modifier(s);
+Example
+let pattern = /w3schools/i;
+Example explained:
+
+w3schools	The pattern to search for
+/w3schools/	A regular expression
+/w3schools/i	A case-insensitive regular expression
+For a tutorial about Regular Expressions, read our JavaScript RegExp Tutorial.
+
+Browser Support
+/regexp/ is an ECMAScript1 (ES1) feature.
+
+ES1 (JavaScript 1997) is fully supported in all browsers:
+
+Chrome	IE	Edge	Firefox	Safari	Opera
+Yes	Yes	Yes	Yes	Yes	Yes
+Modifiers
+Modifiers are used to perform case-insensitive and global searches:
+
+Modifier	Description
+g	Perform a global match (find all matches rather than stopping after the first match)
+i	Perform case-insensitive matching
+m	Perform multiline matching
+Brackets
+Brackets are used to find a range of characters:
+
+Expression	Description
+[abc]	Find any character between the brackets
+[^abc]	Find any character NOT between the brackets
+[0-9]	Find any character between the brackets (any digit)
+[^0-9]	Find any character NOT between the brackets (any non-digit)
+(x|y)	Find any of the alternatives specified
+Metacharacters
+Metacharacters are characters with a special meaning:
+
+Metacharacter	Description
+.	Find a single character, except newline or line terminator
+\w	Find a word character
+\W	Find a non-word character
+\d	Find a digit
+\D	Find a non-digit character
+\s	Find a whitespace character
+\S	Find a non-whitespace character
+\b	Find a match at the beginning/end of a word, beginning like this: \bHI, end like this: HI\b
+\B	Find a match, but not at the beginning/end of a word
+\0	Find a NULL character
+\n	Find a new line character
+\f	Find a form feed character
+\r	Find a carriage return character
+\t	Find a tab character
+\v	Find a vertical tab character
+\xxx	Find the character specified by an octal number xxx
+\xdd	Find the character specified by a hexadecimal number dd
+\udddd	Find the Unicode character specified by a hexadecimal number dddd
+Quantifiers
+Quantifier	Description
+n+	Matches any string that contains at least one n
+n*	Matches any string that contains zero or more occurrences of n
+n?	Matches any string that contains zero or one occurrences of n
+n{X}	Matches any string that contains a sequence of X n's
+n{X,Y}	Matches any string that contains a sequence of X to Y n's
+n{X,}	Matches any string that contains a sequence of at least X n's
+n$	Matches any string with n at the end of it
+^n	Matches any string with n at the beginning of it
+?=n	Matches any string that is followed by a specific string n
+?!n	Matches any string that is not followed by a specific string n
+RegExp Object Properties
+Property	Description
+constructor	Returns the function that created the RegExp object's prototype
+global	Checks whether the "g" modifier is set
+ignoreCase	Checks whether the "i" modifier is set
+lastIndex	Specifies the index at which to start the next match
+multiline	Checks whether the "m" modifier is set
+source	Returns the text of the RegExp pattern
+RegExp Object Methods
+Method	Description
+compile()	Deprecated in version 1.5. Compiles a regular expression
+exec()	Tests for a match in a string. Returns the first match
+test()	Tests for a match in a string. Returns true or false
+toString()	Returns the string value of the regular expression

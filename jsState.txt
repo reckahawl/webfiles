@@ -1,0 +1,171 @@
+JavaScript Statements
+In HTML, JavaScript statements are "instructions" to be "executed" by the web browser.
+
+This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":
+
+Example
+document.getElementById("demo").innerHTML = "Hello Dolly.";
+For a tutorial about Statements, read our JavaScript Statements Tutorial.
+
+JavaScript Statement Identifiers
+JavaScript statements often start with a statement identifier to identify the JavaScript action to be performed.
+
+Statement identifiers are reserved words and cannot be used as variable names (or any other things).
+
+The following table lists all JavaScript statement identifiers:
+
+Statement	Description
+break	Exits a switch or a loop
+class	Declares a class
+const	Declares a variable with a constant value
+continue	Breaks one iteration (in the loop) if a specified condition occurs, and continues with the next iteration in the loop
+debugger	Stops the execution of JavaScript, and calls (if available) the debugging function
+do ... while	Executes a block of statements and repeats the block while a condition is true
+for	Loops through a block of code a number of times
+for ... in	Loops through the properties of an object
+for ... of	Loops through the values of an iterable object
+function	Declares a function
+if ... else ... else if	Marks a block of statements to be executed depending on a condition
+let	Declares a variable
+return	Stops the execution of a function and returns a value from that function
+switch	Marks a block of statements to be executed depending on different cases
+throw	Throws (generates) an error
+try ... catch ... finally	Marks the block of statements to be executed when an error occurs in a try block, and implements error handling
+var	Declares a variable
+while	Marks a block of statements to be executed while a condition is true
+JavaScript Strings
+A JavaScript string stores a series of characters like "John Doe".
+
+A string can be any text inside double or single quotes:
+
+let carName1 = "Volvo XC60";
+let carName2 = 'Volvo XC60';
+String indexes are zero-based:
+
+The first character is in position 0, the second in 1, and so on.
+
+For a tutorial about Strings, read our JavaScript String Tutorial.
+
+String Properties and Methods
+Normally, strings like "John Doe", cannot have methods or properties because they are not objects.
+
+But with JavaScript, methods and properties are also available to strings, because JavaScript treats strings as objects when executing methods and properties.
+
+JavaScript String Methods
+Name	Description
+charAt()	Returns the character at a specified index (position)
+charCodeAt()	Returns the Unicode of the character at a specified index
+concat()	Returns two or more joined strings
+constructor	Returns the string's constructor function
+endsWith()	Returns if a string ends with a specified value
+fromCharCode()	Returns Unicode values as characters
+includes()	Returns if a string contains a specified value
+indexOf()	Returns the index (position) of the first occurrence of a value in a string
+lastIndexOf()	Returns the index (position) of the last occurrence of a value in a string
+length	Returns the length of a string
+localeCompare()	Compares two strings in the current locale
+match()	Searches a string for a value, or a regular expression, and returns the matches
+prototype	Allows you to add properties and methods to an object
+repeat()	Returns a new string with a number of copies of a string
+replace()	Searches a string for a value, or a regular expression, and returns a string where the values are replaced
+search()	Searches a string for a value, or regular expression, and returns the index (position) of the match
+slice()	Extracts a part of a string and returns a new string
+split()	Splits a string into an array of substrings
+startsWith()	Checks whether a string begins with specified characters
+substr()	Extracts a number of characters from a string, from a start index (position)
+substring()	Extracts characters from a string, between two specified indices (positions)
+toLocaleLowerCase()	Returns a string converted to lowercase letters, using the host's locale
+toLocaleUpperCase()	Returns a string converted to uppercase letters, using the host's locale
+toLowerCase()	Returns a string converted to lowercase letters
+toString()	Returns a string or a string object as a string
+toUpperCase()	Returns a string converted to uppercase letters
+trim()	Returns a string with removed whitespaces
+trimEnd()	Returns a string with removed whitespaces from the end
+trimStart()	Returns a string with removed whitespaces from the start
+valueOf()	Returns the primitive value of a string or a string object
+Note
+All string methods return a new value.
+
+They do not change the original variable.
+
+String HTML Wrapper Methods
+HTML wrapper methods return a string wrapped inside an HTML tag.
+
+These are not standard methods, and may not work as expected.
+
+Method	Description
+anchor()	Displays a string as an anchor
+big()	Displays a string using a big font
+blink()	Displays a blinking string
+bold()	Displays a string in bold
+fixed()	Displays a string using a fixed-pitch font
+fontcolor()	Displays a string using a specified color
+fontsize()	Displays a string using a specified size
+italics()	Displays a string in italic
+link()	Displays a string as a hyperlink
+small()	Displays a string using a small font
+strike()	Displays a string with a strikethrough
+sub()	Displays a string as subscript text
+sup()	Displays a string as superscript text
+
+
+JavaScript Typed Arrays
+In Javascript, a typed array is an array-like buffer of binary data.
+
+There is no JavaScript property or object named TypedArray, but properties and methods can be used with typed array objects:
+
+Typed Array Objects
+Object	Data Type	Range
+Int8Array	Signed integer (byte)	-128/127
+Uint8Array	Unsigned integer (octet)	0/255
+Uint8ClampedArray	Unsigned integer (octet)	0/255
+Int16Array	Short integer	-32768/32767
+Uint16Array	Unsigned short integer	0/65535
+Int32Array	Signed long integer	-231/231-1
+Uint32Array	Unsigned long integer	0/232
+Float32Array	Float - 7 significant digits	1.2x10-38/3.4x1038
+Float64Array	Double - 16 significant digits	5.0x10-324/1.8x10308
+BigInt64Array	Big signed integer	-263/263-1
+BigUint64Array	Big unsigned integer	0/264
+Note
+Typed arrays are not arrays.
+
+isArray() on a typed array returns false.
+
+Many array methods (like push and pop) are not supported by typed arrays.
+
+Typed arrays are array-like objects for storing binary data in memory.
+
+Typed Array Methods and Properties
+Method / Property	Description
+BYTES_PER_ELEMENT	Property to count the number of bytes used to store one element
+fill()	Fill all elements with a value
+find()	Returns the first element that satisfies a condition
+name	Returns the name of the typed array
+of()	Method to create a typed array from an array
+some()	Reurns true if one element satisfies a condition
+Uint8Array vs Uint8ClampedArray
+The difference between an Uint8Array and an Uint8ClampedArray is how values are added.
+
+If you set one element in an Uint8ClampedArray to a value outside the 0-255 range, it will default to 0 or 255.
+
+A typed array will just take the first 8 bits of the value.
+
+Typed Array Benefits
+Typed arrays provide a way to handle binary data as efficiently as arrays work in C.
+
+Typed arrays are raw memory, so JavaScript can pass them directly to any function without converting the data to another representation.
+
+Typed arrays are serously faster than normal arrays, for passing data to functions that can use raw binary data (Computer Games, WebGL, Canvas, File APIs, Media APIs).
+
+Browser APIs Supporting Typed Arrays
+Fetch API Example
+fetch(url)
+.then(request => request.arrayBuffer())
+.then(arrayBuffer =>...);
+Canvas Example
+const canvas = document.getElementById('my_canvas');
+const context = canvas.getContext('2d');
+const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+const uint8ClampedArray = imageData.data;
+

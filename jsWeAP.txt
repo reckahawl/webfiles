@@ -1,0 +1,322 @@
+
+Console Object Methods
+Method	Description
+assert()	Writes an error message to the console if a assertion is false
+clear()	Clears the console
+count()	Logs the number of times that this particular call to count() has been called
+error()	Outputs an error message to the console
+group()	Creates a new inline group in the console. This indents following console messages by an additional level, until console.groupEnd() is called
+groupCollapsed()	Creates a new inline group in the console. However, the new group is created collapsed. The user will need to use the disclosure button to expand it
+groupEnd()	Exits the current inline group in the console
+info()	Outputs an informational message to the console
+log()	Outputs a message to the console
+table()	Displays tabular data as a table
+time()	Starts a timer (can track how long an operation takes)
+timeEnd()	Stops a timer that was previously started by console.time()
+trace()	Outputs a stack trace to the console
+warn()	Outputs a warning message to the console
+JavaScript Fetch API
+Examples
+fetch(file)
+.then(x => x.text())
+.then(y => myDisplay(y));
+Fetch is based on async and await. The example might be easier to understand like this:
+
+async function getText(file) {
+  let x = await fetch(file);
+  let y = await x.text();
+  myDisplay(y);
+}
+Use understandable names instead of x and y:
+
+async function getText(file) {
+  let myObject = await fetch(file);
+  let myText = await myObject.text();
+  myDisplay(myText);
+}
+Definition and Usage
+The fetch() method starts the process of fetching a resource from a server.
+
+The fetch() method returns a Promise that resolves to a Response object.
+
+😀 No need for XMLHttpRequest anymore.
+
+Syntax
+fetch(file)
+Parameters
+Parameter	Description
+file	Optional.
+The name of a resource to fetch.
+Return Value
+Type	Description
+Promise	A Promise that resolves to a Response object.
+Browser Support
+fetch() is an ECMAScript6 (ES6) feature.
+
+JavaScript Fullscreen API
+The Fullscreen API
+The Fullscreen API has methods and properties to handle HTML elements in full-screen.
+
+Example
+Show a <video> element in fullscreen mode:
+
+/* Get the element you want to display in fullscreen */
+var elem = document.getElementById("myvideo");
+
+/* Execute the openFullscreen() function to open the video in fullscreen. Include prefixes for browsers that do not support the requestFullscreen property */
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+Fullscreen Properties and Methods
+Property/Method	Description
+exitFullscreen()	Cancels the element in fullscreen mode
+fullscreenElement	Returns the element that is in full-screen mode,
+fullscreenEnabled()	Returns true if the document can be viewed in fullscreen mode
+requestFullscreen()	Opens an element in fullscreen mode
+
+The Geolocation Object
+The Geolocation object allows the user to provide their location to web applications. For privacy reasons, the user is asked for permission to report location information.
+
+Note: This feature is available only in secure contexts (HTTPS).
+
+Note: Geolocation is most accurate for devices with GPS, like iPhone.
+
+The Geolocation API is published through the navigator.geolocation object.
+
+Geolocation Object Properties
+Property	Description
+coordinates	Returns the position and altitude of the device on Earth
+position	Returns the position of the concerned device at a given time
+positionError	Returns the reason of an error occurring when using the geolocating device
+positionOptions	Describes an object containing option properties to pass as a parameter of Geolocation.getCurrentPosition() and Geolocation.watchPosition()
+Geolocation Object Methods
+Method	Description
+clearWatch()	Unregister location/error monitoring handlers previously installed using Geolocation.watchPosition()
+getCurrentPosition()	Returns the current position of the device
+watchPosition()	Returns a watch ID value that then can be used to unregister the handler by passing it to the Geolocation.clearWatch() method
+
+The Window History Object
+The history object contains the URLs visited by the user (in the browser window).
+
+The history object is a property of the window object.
+
+The history object is accessed with:
+
+window.history or just history:
+
+Examples
+let length = window.history.length;
+let length = history.length;
+History Object Properties and Methods
+Property/Method	Description
+back()	Loads the previous URL (page) in the history list
+forward()	Loads the next URL (page) in the history list
+go()	Loads a specific URL (page) from the history list
+length	Returns the number of URLs (pages) in the history list
+
+
+
+The MediaQueryList Object
+The MediaQueryList object stores information from a media query.
+
+The MediaQueryList object is a property of the window object.
+
+The MediaQueryList object is accessed with:
+
+window.matchMedia() or just matchMedia():
+
+Examples
+const mqlObj = window.matchMedia();
+const mqlObj = matchMedia();
+See Also:
+The window.matchMedia() Method
+
+MediaQueryList Properties
+Property	Description
+matches	A boolean.
+true if the document matches the query, otherwise false.
+media	A string.
+A media query (list).
+MediaQueryList Methods
+Method	Description
+addListener()	Adds a new listener function, which is executed whenever the media query's evaluated result changes
+removeListener()	Removes a previously added listener function from the media query list. Does nothing if the specified listener is not already in the list
+Media Queries
+The media queries of the matchMedia() method can be any of the media features of the CSS @media rule, like min-height, min-width, orientation, etc.
+
+Examples
+matchMedia("(max-height: 480px)").matches);
+matchMedia("(max-width: 640px)").matches);
+Media Types
+Value	Description
+all	Default. Used for all media type devices
+print	Used for printers
+screen	Used for computer screens, tablets, smart-phones etc.
+speech	Used for screenreaders that "reads" the page out loud
+Media Features
+Value	Description
+any-hover	Does any available input mechanism allow the user to hover over elements? (added in Media Queries Level 4)
+any-pointer	Is any available input mechanism a pointing device, and if so, how accurate is it? (added in Media Queries Level 4)
+aspect-ratio	The ratio between the width and the height of the viewport
+color	The number of bits per color component for the output device
+color-gamut	The approximate range of colors that are supported by the user agent and output device (added in Media Queries Level 4)
+color-index	The number of colors the device can display
+grid	Whether the device is a grid or bitmap
+height	The viewport height
+hover	Does the primary input mechanism allow the user to hover over elements? (added in Media Queries Level 4)
+inverted-colors	Is the browser or underlying OS inverting colors? (added in Media Queries Level 4)
+light-level	Current ambient light level (added in Media Queries Level 4)
+max-aspect-ratio	The maximum ratio between the width and the height of the display area
+max-color	The maximum number of bits per color component for the output device
+max-color-index	The maximum number of colors the device can display
+max-height	The maximum height of the display area, such as a browser window
+max-monochrome	The maximum number of bits per "color" on a monochrome (greyscale) device
+max-resolution	The maximum resolution of the device, using dpi or dpcm
+max-width	The maximum width of the display area, such as a browser window
+min-aspect-ratio	The minimum ratio between the width and the height of the display area
+min-color	The minimum number of bits per color component for the output device
+min-color-index	The minimum number of colors the device can display
+min-height	The minimum height of the display area, such as a browser window
+min-monochrome	The minimum number of bits per "color" on a monochrome (greyscale) device
+min-resolution	The minimum resolution of the device, using dpi or dpcm
+min-width	The minimum width of the display area, such as a browser window
+monochrome	The number of bits per "color" on a monochrome (greyscale) device
+orientation	The orientation of the viewport (landscape or portrait mode)
+overflow-block	How does the output device handle content that overflows the viewport along the block axis (added in Media Queries Level 4)
+overflow-inline	Can content that overflows the viewport along the inline axis be scrolled (added in Media Queries Level 4)
+pointer	Is the primary input mechanism a pointing device, and if so, how accurate is it? (added in Media Queries Level 4)
+resolution	The resolution of the output device, using dpi or dpcm
+scan	The scanning process of the output device
+scripting	Is scripting (e.g. JavaScript) available? (added in Media Queries Level 4)
+update	How quickly can the output device modify the appearance of the content (added in Media Queries Level 4)
+width	The viewport width
+
+
+
+Storage Object
+The Storage object of the Web Storage API provides access to the session storage or local storage for a particular domain. This allows you to read, add, modify, and delete stored data items.
+
+Storage Object Properties and Methods
+Property/Method	Description
+clear()	Empty all key out of the storage
+getItem()	Returns the value of the specified key name
+key()	Returns the name of the nth key in the storage
+length	Returns the number of data items stored in the Storage object
+setItem()	Adds a key to the storage, or updates a key's value if it already exists
+removeItem()	Removes a key from the storage
+Related Pages for Web Storage API
+Property	Description
+window.localStorage	Allows to save key/value pairs in a web browser. Stores the data with no expiration date
+window.sessionStorage	Allows to save key/value pairs in a web browser. Stores the data for one session
+Cookies vs Local Storage
+Cookies are for client-server (browser-server) applications.
+
+Local storage are for client (browser) applications.
+
+Cookies are associated with websites. If the data is for client use, sending cookies in every HTTP header is waist of bandwith.
+
+Some users have cookies disabled as a rule in their browsers.
+
+A Cookie has a size limit of 4 Kilobytes. Local Storage has a limit of 5 Megabytes per domain.
+
+A Cookie have expiration date. Local Storage has not.
+
+
+JavaScript Validation API
+Constraint Validation DOM Methods and Properties
+Method/Property	Description
+checkValidity()	Returns true if an input element contains valid data.
+setCustomValidity()	Sets the validationMessage property of an input element.
+Property	Description
+validity	Contains boolean properties related to the validity of an input element.
+validationMessage	Contains the message a browser will display when the validity is false.
+willValidate	Indicates if an input element will be validated.
+If an input field contains invalid data, display a message:
+
+The checkValidity() Method
+<input id="id1" type="number" min="100" max="300" required>
+<button onclick="myFunction()">OK</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  const inpObj = document.getElementById("id1");
+  if (!inpObj.checkValidity()) {
+    document.getElementById("demo").innerHTML = inpObj.validationMessage;
+  }
+}
+</script>
+Validity Properties
+The validity property of an input element contains a number of properties related to the validity of data:
+
+Property	Description
+customError	Set to true, if a custom validity message is set.
+patternMismatch	Set to true, if an element's value does not match its pattern attribute.
+rangeOverflow	Set to true, if an element's value is greater than its max attribute.
+rangeUnderflow	Set to true, if an element's value is less than its min attribute.
+stepMismatch	Set to true, if an element's value is invalid per its step attribute.
+tooLong	Set to true, if an element's value exceeds its maxLength attribute.
+typeMismatch	Set to true, if an element's value is invalid per its type attribute.
+valueMissing	Set to true, if an element (with a required attribute) has no value.
+valid	Set to true, if an element's value is valid.
+Examples
+If the number in an input field is greater than 100 (the input's max attribute), display a message:
+
+The rangeOverflow Property
+<input id="id1" type="number" max="100">
+<button onclick="myFunction()">OK</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let text = "Value OK";
+  if (document.getElementById("id1").validity.rangeOverflow) {
+    text = "Value too large";
+  }
+}
+</script>
+If the number in an input field is less than 100 (the input's min attribute), display a message:
+
+The rangeUnderflow Property
+<input id="id1" type="number" min="100">
+<button onclick="myFunction()">OK</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let text = = "Value OK";
+  if (document.getElementById("id1").validity.rangeUnderflow) {
+    text = "Value too small";
+  }
+}
+</script>
+
+JavaScript Web API
+The Web API
+The Web API has methods and properties that can extend the functionality of the browser.
+
+Example
+const myArray = new Uint32Array(10);
+crypto.getRandomValues(myArray);
+Web API References
+Reference	Description
+Console API	Methods to access the browser's debugging console.
+Fetch API	Methods to fetch data from web servers.
+Fullscreen API	Methods to handle HTML elements in full-screen.
+Geolocation API	Methods to let users to provide their location to web applications.
+History API	Methods to access to the URLs visited by the user.
+MediaQueryList API	Methods to query the media (the screen).
+Storage API	Methods to access session and local storage.
+Validation API	Methods to validate HTML elements.
+Other Properties and Methods
+Property/Method	Description
+getRandomValues()	Generates an array of random numbers 

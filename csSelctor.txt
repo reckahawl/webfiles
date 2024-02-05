@@ -1,0 +1,257 @@
+CSS Selector Reference
+CSS Selectors
+In CSS, selectors are patterns used to select the element(s) you want to style.
+
+Use our CSS Selector Tester to demonstrate the different selectors.
+
+Selector	Example	Example description
+.class	.intro	Selects all elements with class="intro"
+.class1.class2	.name1.name2	Selects all elements with both name1 and name2 set within its class attribute
+.class1 .class2	.name1 .name2	Selects all elements with name2 that is a descendant of an element with name1
+#id	#firstname	Selects the element with id="firstname"
+*	*	Selects all elements
+element	p	Selects all <p> elements
+element.class	p.intro	Selects all <p> elements with class="intro"
+element,element	div, p	Selects all <div> elements and all <p> elements
+element element	div p	Selects all <p> elements inside <div> elements
+element>element	div > p	Selects all <p> elements where the parent is a <div> element
+element+element	div + p	Selects the first <p> element that is placed immediately after <div> elements
+element1~element2	p ~ ul	Selects every <ul> element that is preceded by a <p> element
+[attribute]	[target]	Selects all elements with a target attribute
+[attribute=value]	[target=_blank]	Selects all elements with target="_blank"
+[attribute~=value]	[title~=flower]	Selects all elements with a title attribute containing the word "flower"
+[attribute|=value]	[lang|=en]	Selects all elements with a lang attribute value equal to "en" or starting with "en-"
+[attribute^=value]	a[href^="https"]	Selects every <a> element whose href attribute value begins with "https"
+[attribute$=value]	a[href$=".pdf"]	Selects every <a> element whose href attribute value ends with ".pdf"
+[attribute*=value]	a[href*="w3schools"]	Selects every <a> element whose href attribute value contains the substring "w3schools"
+:active	a:active	Selects the active link
+::after	p::after	Insert something after the content of each <p> element
+::before	p::before	Insert something before the content of each <p> element
+:checked	input:checked	Selects every checked <input> element
+:default	input:default	Selects the default <input> element
+:disabled	input:disabled	Selects every disabled <input> element
+:empty	p:empty	Selects every <p> element that has no children (including text nodes)
+:enabled	input:enabled	Selects every enabled <input> element
+:first-child	p:first-child	Selects every <p> element that is the first child of its parent
+::first-letter	p::first-letter	Selects the first letter of every <p> element
+::first-line	p::first-line	Selects the first line of every <p> element
+:first-of-type	p:first-of-type	Selects every <p> element that is the first <p> element of its parent
+:focus	input:focus	Selects the input element which has focus
+:fullscreen	:fullscreen	Selects the element that is in full-screen mode
+:hover	a:hover	Selects links on mouse over
+:in-range	input:in-range	Selects input elements with a value within a specified range
+:indeterminate	input:indeterminate	Selects input elements that are in an indeterminate state
+:invalid	input:invalid	Selects all input elements with an invalid value
+:lang(language)	p:lang(it)	Selects every <p> element with a lang attribute equal to "it" (Italian)
+:last-child	p:last-child	Selects every <p> element that is the last child of its parent
+:last-of-type	p:last-of-type	Selects every <p> element that is the last <p> element of its parent
+:link	a:link	Selects all unvisited links
+::marker	::marker	Selects the markers of list items
+:not(selector)	:not(p)	Selects every element that is not a <p> element
+:nth-child(n)	p:nth-child(2)	Selects every <p> element that is the second child of its parent
+:nth-last-child(n)	p:nth-last-child(2)	Selects every <p> element that is the second child of its parent, counting from the last child
+:nth-last-of-type(n)	p:nth-last-of-type(2)	Selects every <p> element that is the second <p> element of its parent, counting from the last child
+:nth-of-type(n)	p:nth-of-type(2)	Selects every <p> element that is the second <p> element of its parent
+:only-of-type	p:only-of-type	Selects every <p> element that is the only <p> element of its parent
+:only-child	p:only-child	Selects every <p> element that is the only child of its parent
+:optional	input:optional	Selects input elements with no "required" attribute
+:out-of-range	input:out-of-range	Selects input elements with a value outside a specified range
+::placeholder	input::placeholder	Selects input elements with the "placeholder" attribute specified
+:read-only	input:read-only	Selects input elements with the "readonly" attribute specified
+:read-write	input:read-write	Selects input elements with the "readonly" attribute NOT specified
+:required	input:required	Selects input elements with the "required" attribute specified
+:root	:root	Selects the document's root element
+::selection	::selection	Selects the portion of an element that is selected by a user
+:target	#news:target	Selects the current active #news element (clicked on a URL containing that anchor name)
+:valid	input:valid	Selects all input elements with a valid value
+:visited	a:visited	Selects all visited links
+
+
+CSS Functions Reference
+CSS Functions
+CSS functions are used as a value for various CSS properties.
+
+Function	Description
+attr()	Returns the value of an attribute of the selected element
+calc()	Allows you to perform calculations to determine CSS property values
+conic-gradient()	Creates a conic gradient
+counter()	Returns the current value of the named counter
+cubic-bezier()	Defines a Cubic Bezier curve
+hsl()	Defines colors using the Hue-Saturation-Lightness model (HSL)
+hsla()	Defines colors using the Hue-Saturation-Lightness-Alpha model (HSLA)
+linear-gradient()	Creates a linear gradient
+max()	Uses the largest value, from a comma-separated list of values, as the property value
+min()	Uses the smallest value, from a comma-separated list of values, as the property value
+radial-gradient()	Creates a radial gradient
+repeating-conic-gradient()	Repeats a conic gradient
+repeating-linear-gradient()	Repeats a linear gradient
+repeating-radial-gradient()	Repeats a radial gradient
+rgb()	Defines colors using the Red-Green-Blue model (RGB)
+rgba()	Defines colors using the Red-Green-Blue-Alpha model (RGBA)
+var()	Inserts the value of a custom property
+
+
+
+CSS Web Safe Fonts
+Best Web Safe Fonts for HTML and CSS
+The following fonts are the best web safe fonts for HTML and CSS:
+
+Arial (sans-serif)
+Verdana (sans-serif)
+Tahoma (sans-serif)
+Trebuchet MS (sans-serif)
+Times New Roman (serif)
+Georgia (serif)
+Garamond (serif)
+Courier New (monospace)
+Brush Script MT (cursive)
+Note: Before you publish your website, always check how your fonts appear on different browsers and devices, and always use fallback fonts!
+
+Arial (sans-serif)
+Arial is the most widely used font for both online and printed media. Arial is also the default font in Google Docs.
+
+Arial is one of the safest web fonts, and it is available on all major operating systems.
+
+Example
+Lorem ipsum dolor sit amet
+Lorem ipsum dolor sit amet.
+
+0 1 2 3 4 5 6 7 8 9
+
+Verdana (sans-serif)
+Verdana is a very popular font. Verdana is easily readable even for small font sizes.
+
+Example
+Lorem ipsum dolor sit amet
+Lorem ipsum dolor sit amet.
+
+0 1 2 3 4 5 6 7 8 9
+
+Tahoma (sans-serif)
+The Tahoma font has less space between the characters.
+
+Example
+Lorem ipsum dolor sit amet
+Lorem ipsum dolor sit amet.
+
+0 1 2 3 4 5 6 7 8 9
+
+Trebuchet MS (sans-serif)
+Trebuchet MS was designed by Microsoft in 1996. Use this font carefully. Not supported by all mobile operating systems.
+
+Example
+Lorem ipsum dolor sit amet
+Lorem ipsum dolor sit amet.
+
+0 1 2 3 4 5 6 7 8 9
+
+Times New Roman (serif)
+Times New Roman is one of the most recognizable fonts in the world. It looks professional and is used in many newspapers and "news" websites. It is also the primary font for Windows devices and applications.
+
+Example
+Lorem ipsum dolor sit amet
+Lorem ipsum dolor sit amet.
+
+0 1 2 3 4 5 6 7 8 9
+
+Georgia (serif)
+Georgia is an elegant serif font. It is very readable at different font sizes, so it is a good candidate for mobile-responsive design.
+
+Example
+Lorem ipsum dolor sit amet
+Lorem ipsum dolor sit amet.
+
+0 1 2 3 4 5 6 7 8 9
+
+Garamond (serif)
+Garamond is a classical font used for many printed books. It has a timeless look and good readability.
+
+Example
+Lorem ipsum dolor sit amet
+Lorem ipsum dolor sit amet.
+
+0 1 2 3 4 5 6 7 8 9
+
+Courier New (monospace)
+Courier New is the most widely used monospace serif font. Courier New is often used with coding displays, and many email providers use it as their default font. Courier New is also the standard font for movie screenplays.
+
+Example
+Lorem ipsum dolor sit amet
+Lorem ipsum dolor sit amet.
+
+0 1 2 3 4 5 6 7 8 9
+
+Brush Script MT (cursive)
+The Brush Script MT font was designed to mimic handwriting. It is elegant and sophisticated, but can be hard to read. Use it carefully.
+
+Example
+Lorem ipsum dolor sit amet
+Lorem ipsum dolor sit amet.
+
+0 1 2 3 4 5 6 7 8 9
+
+
+CSS Fallback Fonts
+Commonly Used Fallback Fonts
+There are no 100% completely web safe fonts. There is always a chance that a font is not found or is not installed properly. Therefore, it is very important to always use fallback fonts.
+
+This means that you should add a list of similar "backup fonts" in the font-family property. If the first font does not work, the browser will try the next one, and the next one, and so on. Always end the list with a generic font family name.
+
+Below are some commonly used fallback fonts, organized by the 5 generic font families:
+
+Serif
+Sans-serif
+Monospace
+Cursive
+Fantasy
+Serif Fonts
+font-family	Example text	Code
+"Times New Roman", Times, serif	
+This is a Heading
+This is a paragraph.
+
+Georgia, serif	
+This is a Heading
+This is a paragraph.
+
+Garamond, serif	
+This is a Heading
+This is a paragraph.
+
+Sans-Serif Fonts
+font-family	Example text	Code
+Arial, Helvetica, sans-serif	
+This is a Heading
+This is a paragraph.
+
+Tahoma, Verdana, sans-serif	
+This is a Heading
+This is a paragraph.
+
+"Trebuchet MS", Helvetica, sans-serif	
+This is a Heading
+This is a paragraph.
+
+Geneva, Verdana, sans-serif	
+This is a Heading
+This is a paragraph.
+
+Monospace Fonts
+font-family	Example text	Code
+"Courier New", Courier, monospace	
+This is a Heading
+This is a paragraph.
+
+Cursive Fonts
+font-family	Example text	Code
+"Brush Script MT", cursive	
+This is a Heading
+This is a paragraph.
+
+Fantasy Fonts
+font-family	Example text	Code
+Copperplate, Papyrus, fantasy	
+This is a Heading
+This is a paragraph.
+
+Tip: Also check out all available Google Fonts and how to use them.
