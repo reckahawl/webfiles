@@ -1,29 +1,51 @@
-*
-{
-    padding: 0;
-    margin: 0;
-}
-{
-    background-image: url();
-    background-size: cover;
-    background-position: center;
-    box-sizing: border-box;
-    font-family: san-serif;
-
-}
-.menu-bar{
-    background: rgb(0, 100, 0);
+body{
+    background-color: aquamarine;
+    
     text-align: center;
+    
+}
+.header{
+    background-color: chartreuse;
+     
+    margin-top: 0%;
+    margin-bottom: 10px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+span{
+    background-color: chartreuse;
+}
+.cont{
+    background-color: chartreuse;
+}
+.f{
+    height: 100px;
+    width: 120px;
+    
+}
+.f1{
+    float: left;
+}
+.f2{
+    float: center;
+}
+h4{
+    text-align: center;
+}
+aside.team{
+    float: right;
+    text-align: justify;
+    background-color: chartreuse;
+    height: 140px;
 
 }
-.menu-bar ul{
-    display: inline-flex;
-    list-style: none;
-    color: #fff;
+footer{
+    background-color: rgb(235, 63, 100);
+    height: 100px;
 }
-.menu-bar ul li{
-    width: 120px;
-    margin: 15px;
-    padding: 15px;
+div.footer{
+    background-color: darkolivegreen;
+    text-align: center;
 }
- 
