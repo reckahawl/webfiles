@@ -1,0 +1,22 @@
+body{
+    background-color: aquamarine;
+    text-align: justify;
+
+}
+.header-span{
+    text-align: left;
+}
+.first-header{
+    text-align: center;
+    background-color: aqua;
+    text-decoration-color:none;
+
+}
+.section{
+    text-align: left;
+
+}
+.article{
+    text-align:right ;
+    
+}
